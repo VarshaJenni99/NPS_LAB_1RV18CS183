@@ -37,7 +37,7 @@ int main()
     printf("The socket was created\n");
     address.sin_family = AF_INET;
     address.sin_addr.s_addr = INADDR_ANY;
-    address.sin_port = htons(16001);
+    address.sin_port = htons(15000);
 printf("The address before bind %s  ...\n",inet_ntoa(address.sin_addr) );
     if (bind(listenfd,(struct sockaddr *)&address,sizeof(address)) == 0)
     printf("Binding Socket\n");

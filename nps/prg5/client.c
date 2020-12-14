@@ -35,7 +35,7 @@ int main(int argc,char *argv[])
   if ((create_socket = socket(AF_INET,SOCK_STREAM,0)) > 0)
   printf("The Socket was created\n");
   address.sin_family = AF_INET;
-  address.sin_port = htons(16001);
+  address.sin_port = htons(15000);
   inet_pton(AF_INET,argv[1],&address.sin_addr);
   if (connect(create_socket,(struct sockaddr *) &address, sizeof(address)) == 0)
   	printf("The connection was accepted with the server %s...\n",argv[1]);
